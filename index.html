@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Allianz</b> </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#Casos" class="w3-bar-item w3-button">Soy Cliente</a>
+      <a href="#Leads" class="w3-bar-item w3-button">No Soy Cliente</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://fcbayern.com/binaries/content/gallery/fc-bayern/media/images/homepage/stadien/allianz-arena/arena_ima_111205" alt="Architecture" width="1500" height="300">
+  <div class="w3-display-middle w3-margin-top w3-center">
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Casos Section -->
+  <div class="w3-container w3-padding-32" id="Casos">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">En Qué Podemos Ayudarlo?</h3>
+  </div> 
+<!--  OCULTOS EN CASO  -->
+	<select  id="00N1N00000F1vJi" name="00N1N00000F1vJi" title="Área" style="visibility:hidden"> <option value="Call center">Call center</option>
+	</select><br>
+	<select  id="type" name="type" style="visibility:hidden"><option value="Consulta">Consulta</option>
+	</select><br>
+    <select  id="status" name="status" style="visibility:hidden"><option value="Nuevo">Nuevo</option>
+	</select><br>
+<!--  ----------------------------------------------------------------------  -->
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<input type=hidden name="orgid" value="00D1N000002JTi7">
+<input type=hidden name="retURL" value="http://https://www.allianz.com.ar/">
+
+<label for="name">Nombre del contacto</label><br />
+<input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Correo electrónico</label><br />
+<input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Teléfono</label><br />
+<input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="reason">Motivo del caso</label><br /><select  id="reason" name="reason">
+<option value="">--Ninguno--</option>
+<option value="Cambio de CBU">Cambio de CBU</option>
+<option value="Libre Deuda">Libre Deuda</option>
+<option value="Denuncia">Denuncia</option>
+<option value="Copia de poliza">Copia de poliza</option>
+<option value="Certificado y clausula">Certificado y clausula</option>
+</select><br>
+
+<label for="subject">Asunto</label><br />
+<input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Descripción</label><br />
+<textarea name="description"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>
+
+  <!-- Leads Section -->
+  <div class="w3-container w3-padding-32" id="Leads">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quiero Ser Allianz</h3>
+  </div>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00D1N000002JTi7">
+<input type=hidden name="retURL" value="https://www.allianz.com.ar/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Estos campos son elementos de depuración opcionales. Elimine      -->
+<!--  los comentarios de estas líneas si desea realizar una prueba en el      -->
+<!--  modo de depuración.                                                     -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="matias_devich@hotmail.com">                                      -->
+<!--  ----------------------------------------------------------------------  -->
+
+<select  id="lead_source" name="lead_source" style="visibility:hidden"> <option value="Web">Web</option>
+</select><br>
+
+<label for="first_name">Nombre</label><br />
+<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Apellidos</label><br />
+<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Correo electrónico</label><br />
+<input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Teléfono</label><br />
+<input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="mobile">Móvil</label><br />
+<input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+<br />
+<br />
+<br />
+</form>
+
+
+  <!-- Image of location/map -->
+<div class="w3-container">
+  <img src="https://www.allianz.com.ar/sites/default/files/styles/slider/public/slider/allianz_redes_0.jpg?itok=VOTAvwBV" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+<section id="block-block-5" class="block block-block clearfix">
+	<div id="widget-container" class="ekomi-widget-container ekomi-widget-sf1313315e300f255bc81"></div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+    (function (w) {
+
+        w['_ekomiWidgetsServerUrl'] = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//widgets.ekomi.com';
+
+        w['_customerId'] = 131331;
+
+        w['_ekomiDraftMode'] = true;
+
+        w['_language'] = 'es';
+
+        if(typeof(w['_ekomiWidgetTokens']) !== 'undefined'){
+
+            w['_ekomiWidgetTokens'][w['_ekomiWidgetTokens'].length] = 'sf1313315e300f255bc81';
+
+        } else {
+
+            w['_ekomiWidgetTokens'] = new Array('sf1313315e300f255bc81');
+
+        }
+
+        if(typeof(ekomiWidgetJs) == 'undefined') {
+
+            ekomiWidgetJs = true;
+
+ 
+
+            var scr = document.createElement('script');scr.src = 'https://sw-assets.ekomiapps.de/static_resources/widget.js';
+
+            var head = document.getElementsByTagName('head')[0];head.appendChild(scr);
+
+                    }
+
+    })(window);
+</script>
+</section>
+
+
+<!-- Footer -->
+<footer>
+<a id="liveagent_button_online_5733m000000bpI9" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5733m000000bpI9')"><!-- Contenido de chat en línea --></a><div id="liveagent_button_offline_5733m000000bpI9" style="display: none;"><!-- Contenido de chat fuera de línea --></div><script type="text/javascript">
+if (!window._laq) { window._laq = []; }
+window._laq.push(function(){liveagent.showWhenOnline('5733m000000bpI9', document.getElementById('liveagent_button_online_5733m000000bpI9'));
+liveagent.showWhenOffline('5733m000000bpI9', document.getElementById('liveagent_button_offline_5733m000000bpI9'));
+});</script>
+</footer>
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //O falso
+		embedded_svc.settings.language = ''; //Por ejemplo, introduzca 'en' o 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Toma como valor predeterminado Sesión de chat con un experto)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Toma como valor predeterminado Agente sin conexión)
+
+		//embedded_svc.settings.loadingText = ''; //(Toma como valor predeterminado Cargando)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Establece el dominio para su desarrollo de modo que los visitantes puedan navegar por subdominios durante una sesión de chat)
+
+		// Configuración para Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Establece la cumplimentación automática de los campos del formulario previo al chat
+		//embedded_svc.settings.fallbackRouting = []; //Una matriz de identificadores de botones, de usuario o userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Toma como valor predeterminado la opción Contacto)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://matiasdevich-dev-ed.my.salesforce.com',
+			'https://mdevich-developer-edition.na116.force.com/AllianzPartner',
+			gslbBaseURL,
+			'00D1N000002JTi7',
+			'Chat',
+			{
+				baseLiveAgentContentURL: 'https://c.la4-c4-ph2.salesforceliveagent.com/content',
+				deploymentId: '5723m000000bpLb',
+				buttonId: '5733m000000bpI9',
+				baseLiveAgentURL: 'https://d.la4-c4-ph2.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3m000000bm5TEAQ_17277f5d482',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://matiasdevich-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+</body>
+</html>
